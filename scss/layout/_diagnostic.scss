@@ -1,0 +1,92 @@
+.diagnostic-lab {
+    height: 2491px;
+    background-image: url('../img/diagnostic/Vector-left.png'), url('../img/diagnostic/Vector-right.png');
+    background-position: top left,
+        right bottom;
+    background-repeat: no-repeat no-repeat;
+
+    & .container {
+        & .discr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 47px;
+            margin-bottom: 80px;
+
+            & h2 {
+                font-family: $sf;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 104%;
+                color: $dark;
+                margin-bottom: 26px;
+            }
+
+            & p {
+                width: 523px;
+                height: 517px;
+                font-family: $ff;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 187%;
+                color: $grey;
+            }
+
+            & .discr-img {
+                order: 2;
+            }
+
+            & .discr-text {
+                width: 523px;
+                height: 417px;
+            }
+
+        }
+    }
+}
+
+.diagnostic-list {
+
+    &.flex {
+        gap: 31px;
+        margin-bottom: 133px;
+
+        & .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            & div {
+                width: 194px;
+            }
+
+            & h4 {
+                font-family: $ff;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: $dark;
+                margin-bottom: 15px;
+            }
+
+            & p {
+
+                font-family: $ff;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 147%;
+                color: $grey;
+            }
+
+            & .diagnostic-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                fill: $accent;
+
+            }
+        }
+    }
+}

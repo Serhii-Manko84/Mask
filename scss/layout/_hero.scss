@@ -1,0 +1,111 @@
+.container {
+
+    &.hero {
+
+        background: #f7fdfb;
+        height: 744px;
+
+        &.flex {
+            position: relative;
+            margin-bottom: 72px;
+        }
+
+    }
+}
+
+.hero-bg {
+    position: absolute;
+    bottom: 0px;
+    right: -380px;
+    background-image: url('../img/hero/bg.png');
+    width: 927px;
+    height: 891px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 150px;
+    opacity: 0.15;
+}
+
+.wrapper {
+    width: 544px;
+
+    & span {
+        font-family: $sf;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 214%;
+        color: $accent;
+        margin-bottom: 30px;
+    }
+
+    & h1 {
+        font-family: $sf;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 114%;
+        color: $dark;
+        margin-bottom: 40px;
+    }
+
+    & p {
+        font-family: $ff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $grey;
+        margin-bottom: 54px;
+    }
+}
+
+.wrapper-btn {
+    &.flex {
+        justify-content: flex-start;
+        gap: 20px;
+
+        & .button-show {
+            border-radius: 8px;
+            width: 115px;
+            height: 46px;
+            box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+            background: $blue;
+            font-family: $sf;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 214%;
+            text-align: center;
+            color: $white;
+            border: none;
+            cursor: pointer;
+        }
+
+        & .button-learn {
+
+            font-family: $sf;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 214%;
+            text-align: center;
+            color: $accent;
+            background-color: $white;
+            border: 1px solid $accent;
+            border-radius: 8px;
+            width: 125px;
+            height: 46px;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+
+.hero-wom {
+    width: 496px;
+    height: 100%;
+    z-index: 2;
+    background-image: url('../img/hero/woman.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}

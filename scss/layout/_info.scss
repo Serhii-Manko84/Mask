@@ -1,0 +1,44 @@
+.info {
+    position: relative;
+
+    & .info-img {
+        border-radius: 20px 0 0 0;
+        width: 570px;
+        height: 616px;
+    }
+
+    & .info-text {
+        position: absolute;
+        bottom: 59px;
+        left: 285px;
+        width: 285px;
+        height: 332px;
+        padding: 50px 30px 80px 30px;
+
+        font-family: $ff;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: $white;
+        background-color: $blue;
+    }
+
+    & p {
+        font-family: $ff;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: $grey;
+        width: 285px;
+        height: 332px;
+        padding: 80px 30px 132px 30px;
+        background: $white;
+    }
+
+    & .text {
+        color: $white;
+        border-top-right-radius: 20px;
+        background: $blue;
+    }
+
+}
