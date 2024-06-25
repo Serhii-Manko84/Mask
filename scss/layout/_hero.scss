@@ -48,14 +48,17 @@
         margin-bottom: 40px;
     }
 
-    & p {
+    & .wrap-title {
+        width: 555px;
         font-family: $ff;
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
+        text-align: start;
         color: $grey;
         margin-bottom: 54px;
     }
+
 }
 
 .wrapper-btn {
