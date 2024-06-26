@@ -26,6 +26,7 @@ img {
   display: block;
 }
 
+button,
 .cursor,
 .btn {
   cursor: pointer;
@@ -185,7 +186,6 @@ img {
 }
 
 .diagnostic-lab {
-  height: 2491px;
   background-image: url("../img/diagnostic/Vector-left.png"), url("../img/diagnostic/Vector-right.png");
   background-position: top left, right bottom;
   background-repeat: no-repeat no-repeat;
@@ -391,12 +391,6 @@ img {
   margin-bottom: 5px;
 }
 
-.mask {
-  border-bottom-left-radius: 150px;
-  height: 1614px;
-  background: #f7fdfb;
-}
-
 .box-img {
   height: 80px;
   display: flex;
@@ -435,6 +429,7 @@ img {
 .container.flex {
   gap: 90px;
   align-items: flex-start;
+  margin-bottom: 61px;
 }
 .container.flex h2 {
   font-family: "Rubik", sans-serif;
@@ -501,4 +496,173 @@ img {
   width: 26px;
   height: 26px;
   fill: #fff;
+}
+
+.container.reviews {
+  margin-bottom: 88px;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 10px;
+}
+.reviews-list .item {
+  width: 300px;
+  padding: 30px;
+  background-color: #fff;
+}
+.reviews-list .item .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.reviews-list .item .box {
+  color: #ffb800;
+}
+.reviews-list .item .icon {
+  width: 25px;
+  height: 25px;
+  fill: #575c74;
+  opacity: 0.5;
+}
+.reviews-list .item .text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: start;
+  color: #0c122d;
+  margin-bottom: 20px;
+}
+.reviews-list .item .discriptions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.reviews-list .item .discriptions h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.reviews-list .item .discriptions p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #575c74;
+  margin-bottom: 20px;
+}
+
+.container.get {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.container.get h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  color: #0c122d;
+  text-align: center;
+  margin-bottom: 73px;
+}
+.container.get p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  text-align: center;
+  color: #575c74;
+  margin-bottom: 35px;
+}
+.container.get button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 214%;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 24px;
+  width: 115px;
+  height: 46px;
+  box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+  background: #1b5fc1;
+  border: none;
+}
+
+.back-accent {
+  background-color: #ffb800;
+  padding-top: 41px;
+  padding-bottom: 39px;
+}
+
+.container.address .list.flex {
+  gap: 31px;
+}
+.container.address .list.flex .item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.container.address .list.flex .item.item:nth-of-type(2) {
+  width: 433px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.container.address .list.flex .item h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0c122d;
+}
+.container.address .list.flex .item p,
+.container.address .list.flex .item a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  color: #0c122d;
+}
+.container.address .list.flex .item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  fill: #1b5fc1;
+}
+
+.back-grey {
+  background-color: #E1E6EC;
+  padding-top: 73px;
+  height: 416px;
+}
+
+.container.information .list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.container.information .list .item {
+  width: 320px;
+}
+.container.information .list .item .logo {
+  margin-bottom: 38px;
+}
+.container.information .wrap {
+  height: 92px;
+  padding: 43px 0;
+  text-align: center;
+  border-top: 1px solid #C4C4C4;
+}
+.container.information .wrap p {
+  font-size: 15px;
+  line-height: 147%;
+  color: #575c74;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+.container {
+    &.reviews {
+        margin-bottom: 88px;
+    }
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 10px;
+
+    & .item {
+        width: 300px;
+        padding: 30px;
+        background-color: $white;
+
+        & .result {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        & .box {
+            color: $accent;
+        }
+
+        & .icon {
+            width: 25px;
+            height: 25px;
+            fill: $grey;
+            opacity: 0.5;
+        }
+
+        & .text {
+            font-family: $ff;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: start;
+            color: $dark;
+            margin-bottom: 20px;
+        }
+
+        & .discriptions {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+
+            & h5 {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            & p {
+                font-weight: 400;
+                font-size: 14px;
+                color: $grey;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+
+
+
+}
