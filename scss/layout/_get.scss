@@ -1,45 +1,98 @@
-.container {
+// .container {
+//     &.get {
+//         margin-bottom: 120px;
+//         text-align: center;
+
+//         & h2 {
+
+//             font-family: $sf;
+//             font-weight: 700;
+//             font-size: 48px;
+//             line-height: 104%;
+//             color: $dark;
+//             text-align: center;
+//             margin-bottom: 73px;
+//         }
+
+//         & p {
+//             font-family: $ff;
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 187%;
+//             text-align: center;
+//             color: $grey;
+//             margin-bottom: 35px;
+//         }
+
+//         & button {
+//             font-family: $sf;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 214%;
+//             text-align: center;
+//             color: $white;
+
+//             border-radius: 8px;
+//             padding: 8px 24px;
+//             width: 115px;
+//             height: 46px;
+//             box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+//             background: $blue;
+//             border: none;
+
+//         }
+//     }
+// }
+
+@media screen and (min-width: 480px) {
+  .container {
     &.get {
-        margin-bottom: 120px;
+      margin-bottom: 40px;
+      text-align: center;
+
+      & h2 {
+        font-family: $sf;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 104%;
+        color: $dark;
         text-align: center;
+        margin-bottom: 33px;
+      }
 
-        & h2 {
+      & p {
+        font-family: $ff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 187%;
+        text-align: center;
+        color: $grey;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
 
-            font-family: $sf;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 104%;
-            color: $dark;
-            text-align: center;
-            margin-bottom: 73px;
-        }
+      & button {
+        font-family: $sf;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 214%;
+        text-align: center;
+        color: $white;
 
-        & p {
-            font-family: $ff;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 187%;
-            text-align: center;
-            color: $grey;
-            margin-bottom: 35px;
-        }
-
-        & button {
-            font-family: $sf;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 214%;
-            text-align: center;
-            color: $white;
-
-            border-radius: 8px;
-            padding: 8px 24px;
-            width: 115px;
-            height: 46px;
-            box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
-            background: $blue;
-            border: none;
-            
-        }
+        border-radius: 8px;
+        padding: 8px 24px;
+        width: 115px;
+        height: 46px;
+        box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+        background: $blue;
+        border: none;
+      }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

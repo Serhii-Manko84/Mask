@@ -1,114 +1,223 @@
-.container {
+// .container {
 
-    &.hero {
+//     &.hero {
 
-        background: #f7fdfb;
-        height: 744px;
+//         background: #f7fdfb;
+//         height: 744px;
 
-        &.flex {
-            position: relative;
-            margin-bottom: 72px;
+//         &.flex {
+//             position: relative;
+//             margin-bottom: 72px;
+//         }
+
+//     }
+// }
+
+// .hero-bg {
+//     position: absolute;
+//     bottom: 0px;
+//     right: -380px;
+//     background-image: url('../img/hero/bg.png');
+//     width: 927px;
+//     height: 891px;
+//     background-position: right center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-bottom-left-radius: 150px;
+//     opacity: 0.15;
+// }
+
+// .wrapper {
+//     width: 544px;
+
+//     & span {
+//         font-family: $sf;
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 214%;
+//         color: $accent;
+//         margin-bottom: 30px;
+//     }
+
+//     & h1 {
+//         font-family: $sf;
+//         font-weight: 700;
+//         font-size: 72px;
+//         line-height: 114%;
+//         color: $dark;
+//         margin-bottom: 40px;
+//     }
+
+//     & .wrap-title {
+//         width: 555px;
+//         font-family: $ff;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 150%;
+//         text-align: start;
+//         color: $grey;
+//         margin-bottom: 54px;
+//     }
+
+// }
+
+// .wrapper-btn {
+//     &.flex {
+//         justify-content: flex-start;
+//         gap: 20px;
+
+//         & .button-show {
+//             border-radius: 8px;
+//             width: 115px;
+//             height: 46px;
+//             box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+//             background: $blue;
+//             font-family: $sf;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 214%;
+//             text-align: center;
+//             color: $white;
+//             border: none;
+//             cursor: pointer;
+//         }
+
+//         & .button-learn {
+
+//             font-family: $sf;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 214%;
+//             text-align: center;
+//             color: $accent;
+//             background-color: $white;
+//             border: 1px solid $accent;
+//             border-radius: 8px;
+//             width: 125px;
+//             height: 46px;
+//             cursor: pointer;
+//         }
+//     }
+
+
+// }
+
+
+// .hero-wom {
+//     width: 496px;
+//     height: 100%;
+//     z-index: 2;
+//     background-image: url('../img/hero/woman.png');
+//     background-position: center;
+//     background-repeat: no-repeat;
+
+// }
+
+
+
+@media screen and (min-width: 480px) {
+
+    .container {
+
+        &.hero {
+    
+            background: #f7fdfb;
+            height: 300px;
+    
+            &.flex {
+                position: relative;
+                margin-bottom: 18px;
+
+                & .hero-wom {display: none};
+            }
+    
         }
-
     }
-}
-
-.hero-bg {
-    position: absolute;
-    bottom: 0px;
-    right: -380px;
-    background-image: url('../img/hero/bg.png');
-    width: 927px;
-    height: 891px;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-left-radius: 150px;
-    opacity: 0.15;
-}
-
-.wrapper {
-    width: 544px;
-
-    & span {
-        font-family: $sf;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 214%;
-        color: $accent;
-        margin-bottom: 30px;
-    }
-
-    & h1 {
-        font-family: $sf;
-        font-weight: 700;
-        font-size: 72px;
-        line-height: 114%;
-        color: $dark;
-        margin-bottom: 40px;
-    }
-
-    & .wrap-title {
-        width: 555px;
-        font-family: $ff;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: start;
-        color: $grey;
-        margin-bottom: 54px;
-    }
-
-}
-
-.wrapper-btn {
-    &.flex {
-        justify-content: flex-start;
-        gap: 20px;
-
-        & .button-show {
-            border-radius: 8px;
-            width: 115px;
-            height: 46px;
-            box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
-            background: $blue;
+    
+       .wrapper {
+        max-width: 100%;
+        
+    
+        & span {
             font-family: $sf;
             font-weight: 500;
             font-size: 14px;
             line-height: 214%;
-            text-align: center;
-            color: $white;
-            border: none;
-            cursor: pointer;
-        }
-
-        & .button-learn {
-
-            font-family: $sf;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 214%;
-            text-align: center;
             color: $accent;
-            background-color: $white;
-            border: 1px solid $accent;
-            border-radius: 8px;
-            width: 125px;
-            height: 46px;
-            cursor: pointer;
+            margin-bottom: 30px;
         }
+    
+        & h1 {
+            font-family: $sf;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 114%;
+            color: $dark;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        & .wrap-title {
+            font-family: $ff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: justify;
+            color: $grey;
+            margin-bottom: 27px;
+        }
+    
     }
-
-
+    
+    .wrapper-btn {
+        &.flex {
+            justify-content: center;
+            gap: 20px;
+    
+            & .button-show {
+                border-radius: 8px;
+                width: 115px;
+                height: 46px;
+                box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+                background: $blue;
+                font-family: $sf;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 214%;
+                text-align: center;
+                color: $white;
+                border: none;
+                cursor: pointer;
+            }
+    
+            & .button-learn {
+    
+                font-family: $sf;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 214%;
+                text-align: center;
+                color: $accent;
+                background-color: $white;
+                border: 1px solid $accent;
+                border-radius: 8px;
+                width: 125px;
+                height: 46px;
+                cursor: pointer;
+            }
+        }
+    
+    
+    }
+    
+    
+   
 }
 
+@media screen and (min-width: 768px) {
+   
+}
 
-.hero-wom {
-    width: 496px;
-    height: 100%;
-    z-index: 2;
-    background-image: url('../img/hero/woman.png');
-    background-position: center;
-    background-repeat: no-repeat;
-
+@media screen and (min-width: 1200px) {
+    
 }
