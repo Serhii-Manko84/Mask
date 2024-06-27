@@ -14,10 +14,6 @@
       margin-bottom: 60px;
     }
 
-    & .information-about,
-    & .information-mes {
-    }
-
     & .information-box {
       width: 340px;
 
@@ -34,7 +30,7 @@
       }
     }
 
-    & .information-about-list,
+    & .information-about-list
     & .information-mes-list {
       display: flex;
       flex-direction: column;
@@ -43,6 +39,7 @@
       gap: 5px;
     }
 
+    
     & .information-about,
     & .information-mes {
       & h4 {
@@ -68,8 +65,9 @@
         color: $blue;
       }
     }
+    
 
-    .wrap {
+    & .wrap {
       padding: 43px 0 30px 0;
       text-align: center;
       border-top: 1px solid #c4c4c4;
