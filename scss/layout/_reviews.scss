@@ -12,7 +12,7 @@
 //   padding: 20px 10px;
 
 //   & .item {
-//     width: 300px;
+//     max-width: 300px;
 //     padding: 30px;
 //     background-color: $white;
 
@@ -28,7 +28,7 @@
 //     }
 
 //     & .icon {
-//       width: 25px;
+//       max-width: 25px;
 //       height: 25px;
 //       fill: $grey;
 //       opacity: 0.5;
@@ -65,7 +65,7 @@
 //   }
 // }
 
-@media screen and (min-width: 480px) {
+@media screen  and (max-width: 479px), screen and (min-width: 480px) {
   .container {
     &.reviews {
       margin-bottom: 48px;
@@ -94,7 +94,7 @@
       }
 
       & .icon {
-        width: 25px;
+        max-width: 25px;
         height: 25px;
         fill: $grey;
         opacity: 0.5;

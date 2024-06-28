@@ -12,14 +12,14 @@
 //     top: -414px;
 //     left: -434px;
 //     border-bottom-left-radius: 150px;
-//     width: 1920px;
+//     max-width: 1920px;
 //     height: 1614px;
 //     background: #f7fdfb;
 //   }
 
 //   & span {
 //     display: inline-block;
-//     width: 146px;
+//     max-width: 146px;
 //     font-family: $ff;
 //     font-weight: 400;
 //     font-size: 15px;
@@ -29,7 +29,7 @@
 //   }
 
 //   & .line {
-//     width: 147px;
+//     max-width: 147px;
 //     height: 1px;
 //     background-color: $accent;
 //     margin-right: 87px;
@@ -44,7 +44,7 @@
 // }
 
 // .box-mask {
-//   width: 100%;
+//   max-width: 100%;
 //   height: 100%;
 // }
 
@@ -61,7 +61,7 @@
 //         font-size: 48px;
 //         line-height: 104%;
 //         color: $dark;
-//         width: 653px;
+//         max-width: 653px;
 //         margin-bottom: 35px;
 //       }
 
@@ -79,7 +79,7 @@
 
 // .mask-list {
 //   &.flex {
-//     width: 650px;
+//     max-width: 650px;
 //     row-gap: 26px;
 //     flex-wrap: wrap;
 
@@ -90,7 +90,7 @@
 //       gap: 18px;
 
 //       & .wrapper-icon {
-//         width: 56px;
+//         max-width: 56px;
 //         height: 56px;
 //         border-radius: 50%;
 //         background-color: $blue;
@@ -99,7 +99,7 @@
 //       }
 
 //       & div {
-//         width: 238px;
+//         max-width: 238px;
 //         display: flex;
 //         flex-direction: column;
 //         justify-content: center;
@@ -115,7 +115,7 @@
 //       }
 
 //       & p {
-//         width: auto;
+//         max-width: auto;
 //         font-size: 15px;
 //         line-height: 147%;
 //         color: $grey;
@@ -126,7 +126,7 @@
 //         display: flex;
 //         justify-content: center;
 //         align-items: center;
-//         width: 26px;
+//         max-width: 26px;
 //         height: 26px;
 //         fill: $white;
 //       }
@@ -134,7 +134,7 @@
 //   }
 // }
 
-@media screen and (min-width: 480px) {
+@media screen  and (max-width: 479px), screen and (min-width: 480px) {
   .box-img {
     position: relative;
     display: block;
@@ -162,9 +162,10 @@
 
     & ul {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 20px;
     }
   }
 
@@ -216,7 +217,7 @@
         gap: 18px;
 
         & .wrapper-icon {
-          width: 52px;
+          max-width: 52px;
           height: 52px;
           border-radius: 50%;
           background-color: $blue;
@@ -252,7 +253,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 26px;
+          max-width: 26px;
           height: 26px;
           fill: $white;
         }

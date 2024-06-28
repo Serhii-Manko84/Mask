@@ -10,12 +10,12 @@
 //       display: flex;
 //       justify-content: space-between;
 //       align-items: flex-start;
-//       width: auto;
+//       max-width: auto;
 //       margin-bottom: 60px;
 //     }
 
 //     & .information-box {
-//       width: 340px;
+//       max-width: 340px;
 
 //       & .logo {
 //         margin-bottom: 38px;
@@ -79,7 +79,7 @@
 //   }
 // }
 
-@media screen and (min-width: 480px) {
+@media screen  and (max-width: 479px), screen and (min-width: 480px) {
   .back-grey {
     background-color: #e1e6ec;
     padding-top: 72px;
@@ -92,7 +92,7 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        width: auto;
+        max-width: auto;
         margin-bottom: 60px;
       }
 

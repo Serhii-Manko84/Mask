@@ -34,7 +34,7 @@
 
 //             border-radius: 8px;
 //             padding: 8px 24px;
-//             width: 115px;
+//             max-width: 115px;
 //             height: 46px;
 //             box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
 //             background: $blue;
@@ -44,7 +44,7 @@
 //     }
 // }
 
-@media screen and (min-width: 480px) {
+@media screen  and (max-width: 479px), screen and (min-width: 480px) {
   .container {
     &.get {
       margin-bottom: 40px;
@@ -81,7 +81,7 @@
 
         border-radius: 8px;
         padding: 8px 24px;
-        width: 115px;
+        max-width: 115px;
         height: 46px;
         box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
         background: $blue;

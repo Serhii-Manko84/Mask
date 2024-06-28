@@ -18,7 +18,7 @@
 //     bottom: 0px;
 //     right: -380px;
 //     background-image: url('../img/hero/bg.png');
-//     width: 927px;
+//     max-width: 927px;
 //     height: 891px;
 //     background-position: right center;
 //     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 // }
 
 // .wrapper {
-//     width: 544px;
+//     max-width: 544px;
 
 //     & span {
 //         font-family: $sf;
@@ -49,7 +49,7 @@
 //     }
 
 //     & .wrap-title {
-//         width: 555px;
+//         max-width: 555px;
 //         font-family: $ff;
 //         font-weight: 400;
 //         font-size: 16px;
@@ -68,7 +68,7 @@
 
 //         & .button-show {
 //             border-radius: 8px;
-//             width: 115px;
+//             max-width: 115px;
 //             height: 46px;
 //             box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
 //             background: $blue;
@@ -93,7 +93,7 @@
 //             background-color: $white;
 //             border: 1px solid $accent;
 //             border-radius: 8px;
-//             width: 125px;
+//             max-width: 125px;
 //             height: 46px;
 //             cursor: pointer;
 //         }
@@ -104,7 +104,7 @@
 
 
 // .hero-wom {
-//     width: 496px;
+//     max-width: 496px;
 //     height: 100%;
 //     z-index: 2;
 //     background-image: url('../img/hero/woman.png');
@@ -115,7 +115,7 @@
 
 
 
-@media screen and (min-width: 480px) {
+@media screen  and (max-width: 479px), screen and (min-width: 480px) {
 
     .container {
 
@@ -136,6 +136,7 @@
     
        .wrapper {
         max-width: 100%;
+        margin-bottom: 30px;
         
     
         & span {
@@ -176,7 +177,7 @@
     
             & .button-show {
                 border-radius: 8px;
-                width: 115px;
+                max-width: 115px;
                 height: 46px;
                 box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
                 background: $blue;
@@ -201,7 +202,7 @@
                 background-color: $white;
                 border: 1px solid $accent;
                 border-radius: 8px;
-                width: 125px;
+                max-width: 125px;
                 height: 46px;
                 cursor: pointer;
             }

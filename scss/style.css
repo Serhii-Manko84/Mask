@@ -38,6 +38,19 @@ button,
   cursor: pointer;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -54,6 +67,7 @@ button,
 }
 @media screen and (min-width: 1200px) {
   .container {
+    width: 100%;
     max-width: 1140px;
     padding-right: 15px;
     padding-left: 15px;
@@ -61,7 +75,7 @@ button,
     margin-right: auto;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .header {
     position: relative;
     height: 67px;
@@ -73,7 +87,7 @@ button,
     z-index: -1;
     top: -19px;
     left: 0px;
-    width: 100%;
+    max-width: 100%;
     height: 1195px;
     background-color: #f7fdfb;
   }
@@ -101,7 +115,7 @@ button,
   }
   .header .container .navigation .navigation-list .btn {
     border-radius: 8px;
-    width: 83px;
+    max-width: 83px;
     height: 47px;
     background: #1b5fc1;
     font-family: "Rubik", sans-serif;
@@ -113,7 +127,7 @@ button,
     border: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.hero {
     background: #f7fdfb;
     height: 300px;
@@ -127,6 +141,7 @@ button,
   }
   .wrapper {
     max-width: 100%;
+    margin-bottom: 30px;
   }
   .wrapper span {
     font-family: "Rubik", sans-serif;
@@ -160,7 +175,7 @@ button,
   }
   .wrapper-btn.flex .button-show {
     border-radius: 8px;
-    width: 115px;
+    max-width: 115px;
     height: 46px;
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
     background: #1b5fc1;
@@ -183,12 +198,12 @@ button,
     background-color: #fff;
     border: 1px solid #ffb800;
     border-radius: 8px;
-    width: 125px;
+    max-width: 125px;
     height: 46px;
     cursor: pointer;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container .discr {
     display: block;
     margin-bottom: 40px;
@@ -231,7 +246,8 @@ button,
   gap: 8px;
 }
 .diagnostic-list.flex .item div {
-  width: 364px;
+  max-width: 100%;
+  max-width: 364px;
 }
 .diagnostic-list.flex .item h4 {
   font-family: "Open Sans", sans-serif;
@@ -252,12 +268,12 @@ button,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  max-width: 40px;
   height: 40px;
   fill: #ffb800;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .info {
     position: relative;
   }
@@ -315,13 +331,13 @@ button,
   }
   .info.flex .content .aside button {
     border: 1px solid #1b5fc1;
-    border-radius: 8px;
-    width: 125px;
+    border-radius: 5px;
+    max-width: 125px;
     height: 46px;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 214%;
+    font-size: 10px;
+    line-height: 114%;
     text-align: center;
     color: #1b5fc1;
     background: #ffb800;
@@ -339,12 +355,12 @@ button,
     align-items: center;
     border-radius: 50%;
     background-color: #1b5fc1;
-    width: 46px;
-    height: 46px;
+    max-width: 46px;
+    max-height: 46px;
     margin-left: 40px;
   }
   .info.flex .content .aside .aside-contact .wrap-icon .aside-icon {
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     fill: #fff;
   }
@@ -362,7 +378,7 @@ button,
   }
   .info.flex .content .aside .wrap-cont a {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 10px;
     line-height: 100%;
     color: #0c122d;
   }
@@ -376,7 +392,7 @@ button,
     text-align: center;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .box-img {
     position: relative;
     display: block;
@@ -401,9 +417,10 @@ button,
   }
   .box-img ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
   }
   .box-mask {
     display: none;
@@ -442,7 +459,7 @@ button,
     gap: 18px;
   }
   .mask-list.flex .item .wrapper-icon {
-    width: 52px;
+    max-width: 52px;
     height: 52px;
     border-radius: 50%;
     background-color: #1b5fc1;
@@ -474,12 +491,12 @@ button,
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 26px;
+    max-width: 26px;
     height: 26px;
     fill: #fff;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.reviews {
     margin-bottom: 48px;
   }
@@ -503,7 +520,7 @@ button,
     color: #ffb800;
   }
   .reviews-list .item .icon {
-    width: 25px;
+    max-width: 25px;
     height: 25px;
     fill: #575c74;
     opacity: 0.5;
@@ -534,7 +551,7 @@ button,
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.get {
     margin-bottom: 40px;
     text-align: center;
@@ -567,14 +584,14 @@ button,
     color: #fff;
     border-radius: 8px;
     padding: 8px 24px;
-    width: 115px;
+    max-width: 115px;
     height: 46px;
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
     background: #1b5fc1;
     border: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .back-accent {
     background-color: #ffb800;
     padding-top: 20px;
@@ -586,7 +603,7 @@ button,
     align-items: center;
   }
   .container.address .list.flex .item {
-    width: 300px;
+    max-width: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -616,12 +633,12 @@ button,
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
+    max-width: 32px;
     height: 32px;
     fill: #1b5fc1;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .back-grey {
     background-color: #e1e6ec;
     padding-top: 72px;
@@ -631,7 +648,7 @@ button,
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: auto;
+    max-width: auto;
     margin-bottom: 60px;
   }
   .container.information .information-box {
