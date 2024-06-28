@@ -67,7 +67,7 @@
 
 // }
 
-@media screen  and (max-width: 479px), screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .header {
     position: relative;
     height: 67px;
@@ -104,20 +104,20 @@
             padding: 9px 0px 8px 0px;
             font-family: $ff;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 187%;
             text-align: center;
             color: $grey;
           }
           & .btn {
             border-radius: 8px;
-            max-width: 83px;
+            max-width: 63px;
             height: 47px;
             background: $blue;
             font-family: $sf;
             font-weight: 500;
-            font-size: 12px;
-            line-height: 114%;
+            font-size: 10px;
+            line-height: 100%;
             text-align: center;
             color: $white;
             border: none;
@@ -129,6 +129,35 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+    height: 67px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+
+       & .container {
+      
+      & .navigation {
+        & .navigation-list {
+         
+          column-gap: 20px;
+
+          &.flex {
+            align-items: center;
+          }
+
+          & a {
+            padding: 10px 0px 8px 0px;
+            font-size: 16px;
+          }
+          & .btn {
+            max-width: 83px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

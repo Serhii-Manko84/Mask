@@ -90,11 +90,10 @@
 //     }
 // }
 
-@media screen  and (max-width: 479px), screen and (min-width: 480px) {
+@media screen and (max-width: 480px), screen and (min-width: 480px) {
   .container {
     & .discr {
       display: block;
-      
       margin-bottom: 40px;
 
       & img {
@@ -116,7 +115,6 @@
       }
 
       & p {
-        
         font-family: $ff;
         font-weight: 400;
         font-size: 14px;
@@ -124,10 +122,8 @@
         color: $grey;
         text-align: justify;
         padding: 0 20px;
-       
       }
-
-      }
+    }
   }
 }
 
@@ -145,17 +141,16 @@
 
       & div {
         max-width: 100%;
-  max-width: 364px;
+        max-width: 364px;
       }
 
       & h4 {
-
         font-family: $ff;
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
         color: $dark;
-        
+
         margin-bottom: 10px;
       }
 
@@ -180,6 +175,42 @@
 }
 
 @media screen and (min-width: 768px) {
+  .diagnostic-list {
+    &.flex {
+      gap: 20px;
+      margin-bottom: 73px;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      & .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        & div {
+          max-width: 194px;
+        }
+      }
+    }
+  }
+  .container {
+    & .discr {
+      & div {
+        max-width: 100%;
+      }
+
+      & h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      & p {
+        font-size: 16px;
+        padding: 0 30px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

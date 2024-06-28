@@ -37,7 +37,7 @@ button,
   padding-right: 15px;
   padding-left: 15px; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 100%;
     margin-left: auto;
@@ -87,22 +87,38 @@ button,
         padding: 9px 0px 8px 0px;
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 187%;
         text-align: center;
         color: #575c74; }
       .header .container .navigation .navigation-list .btn {
         border-radius: 8px;
-        max-width: 83px;
+        max-width: 63px;
         height: 47px;
         background: #1b5fc1;
         font-family: "Rubik", sans-serif;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 114%;
+        font-size: 10px;
+        line-height: 100%;
         text-align: center;
         color: #fff;
         border: none; } }
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+    height: 67px;
+    padding-top: 20px;
+    margin-bottom: 30px; }
+    .header .container .navigation .navigation-list {
+      column-gap: 20px; }
+      .header .container .navigation .navigation-list.flex {
+        align-items: center; }
+      .header .container .navigation .navigation-list a {
+        padding: 10px 0px 8px 0px;
+        font-size: 16px; }
+      .header .container .navigation .navigation-list .btn {
+        max-width: 83px;
+        font-size: 12px; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.hero {
     background: #f7fdfb;
@@ -114,7 +130,7 @@ button,
         display: none; }
 
   .wrapper {
-    max-width: 100%;
+    max-width: 60%;
     margin-bottom: 30px; }
     .wrapper span {
       font-family: "Rubik", sans-serif;
@@ -170,7 +186,29 @@ button,
       max-width: 125px;
       height: 46px;
       cursor: pointer; } }
-@media screen and (max-width: 479px), screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .container.hero.flex {
+    margin-bottom: 28px; }
+
+  .wrapper {
+    max-width: 70%;
+    margin-bottom: 40px; }
+    .wrapper h1 {
+      font-size: 42px;
+      margin-bottom: 30px; }
+    .wrapper .wrap-title {
+      font-size: 16px;
+      margin-bottom: 37px; }
+
+  .wrapper-btn.flex {
+    justify-content: center;
+    gap: 20px; }
+    .wrapper-btn.flex .button-show {
+      max-width: 135px;
+      font-size: 16px; }
+    .wrapper-btn.flex .button-learn {
+      font-size: 16px; } }
+@media screen and (max-width: 480px), screen and (min-width: 480px) {
   .container .discr {
     display: block;
     margin-bottom: 40px; }
@@ -228,6 +266,28 @@ button,
       height: 40px;
       fill: #ffb800; }
 
+@media screen and (min-width: 768px) {
+  .diagnostic-list.flex {
+    gap: 20px;
+    margin-bottom: 73px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .diagnostic-list.flex .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px; }
+      .diagnostic-list.flex .item div {
+        max-width: 194px; }
+
+  .container .discr div {
+    max-width: 100%; }
+  .container .discr h2 {
+    font-size: 32px;
+    margin-bottom: 20px; }
+  .container .discr p {
+    font-size: 16px;
+    padding: 0 30px; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .info {
     position: relative; }
@@ -296,11 +356,11 @@ button,
             align-items: center;
             border-radius: 50%;
             background-color: #1b5fc1;
-            max-width: 46px;
-            max-height: 46px;
+            width: 46px;
+            height: 46px;
             margin-left: 40px; }
             .info.flex .content .aside .aside-contact .wrap-icon .aside-icon {
-              max-width: 20px;
+              width: 20px;
               height: 20px;
               fill: #fff; }
         .info.flex .content .aside .wrap-cont {
@@ -326,6 +386,39 @@ button,
       color: #0c122d;
       margin-bottom: 5px;
       text-align: center; } }
+@media screen and (min-width: 768px) {
+  .info.flex {
+    margin-bottom: 50px; }
+  .info .inner {
+    max-width: 100%; }
+    .info .inner p {
+      font-size: 16px; }
+  .info.flex .content {
+    max-width: 750px; }
+    .info.flex .content div {
+      background: #ffb800; }
+      .info.flex .content div p {
+        font-size: 16px;
+        margin-bottom: 23px; }
+    .info.flex .content .aside button {
+      font-size: 14px;
+      margin-right: 60px; }
+    .info.flex .content .aside .aside-contact .wrap-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 46px;
+      height: 46px; }
+      .info.flex .content .aside .aside-contact .wrap-icon .aside-icon {
+        width: 20px;
+        height: 20px; }
+    .info.flex .content .aside .wrap-cont span {
+      font-size: 16px; }
+    .info.flex .content .aside .wrap-cont a {
+      font-size: 14px; }
+  .info.flex .content-caption {
+    font-size: 20px;
+    margin-bottom: 15px; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .box-img {
     position: relative;
@@ -356,7 +449,6 @@ button,
     display: none; }
 
   .container.mask.flex {
-    gap: 90px;
     align-items: flex-start;
     margin-bottom: 30px; }
     .container.mask.flex .box-mask-info h2 {
@@ -385,14 +477,14 @@ button,
       align-items: flex-start;
       gap: 18px; }
       .mask-list.flex .item .wrapper-icon {
-        max-width: 52px;
+        width: 52px;
         height: 52px;
         border-radius: 50%;
         background-color: #1b5fc1;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        flex-shrink: 0; }
       .mask-list.flex .item div {
-        max-width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -413,9 +505,70 @@ button,
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 26px;
+        width: 26px;
         height: 26px;
         fill: #fff; } }
+@media screen and (min-width: 768px) {
+  .box-img {
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; }
+    .box-img span {
+      display: inline-block;
+      max-width: 146px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #575c74;
+      margin-right: 16px; }
+    .box-img .line {
+      max-width: 147px;
+      height: 1px;
+      background-color: #ffb800;
+      margin-right: 87px; }
+    .box-img ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px; }
+
+  .box-mask {
+    max-width: 100%;
+    height: 100%; }
+
+  .container.mask.flex {
+    gap: 90px;
+    align-items: flex-start;
+    margin-bottom: 30px; }
+    .container.mask.flex .box-mask-info h2 {
+      font-size: 32px;
+      margin-bottom: 20px; }
+    .container.mask.flex .box-mask-info p {
+      font-size: 16px;
+      margin-bottom: 60px; }
+
+  .mask-list.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; }
+    .mask-list.flex .item {
+      display: flex;
+      flex: calc(50% - 25px);
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px; }
+      .mask-list.flex .item h4 {
+        font-size: 20px;
+        padding: 10px; }
+      .mask-list.flex .item p {
+        font-size: 16px; }
+      .mask-list.flex .item .mask-icon {
+        width: 26px;
+        height: 26px; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.reviews {
     margin-bottom: 48px; }
@@ -496,6 +649,18 @@ button,
       box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
       background: #1b5fc1;
       border: none; } }
+@media screen and (min-width: 768px) {
+  .container.get {
+    margin-bottom: 60px; }
+    .container.get h2 {
+      font-size: 30px;
+      margin-bottom: 43px; }
+    .container.get p {
+      font-size: 16px;
+      margin-bottom: 30px; }
+    .container.get button {
+      font-size: 14px;
+      max-width: 135px; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .back-accent {
     background-color: #ffb800;
@@ -536,7 +701,81 @@ button,
         max-width: 32px;
         height: 32px;
         fill: #1b5fc1; } }
+@media screen and (min-width: 768px) {
+  .back-accent {
+    background-color: #ffb800;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .container.address .list.flex {
+    gap: 50px;
+    flex-direction: row; }
+    .container.address .list.flex .item {
+      gap: 10px; }
+      .container.address .list.flex .item.item:nth-of-type(2) {
+        padding: 20px 0;
+        border: none; }
+      .container.address .list.flex .item h4 {
+        font-size: 18px; }
+      .container.address .list.flex .item p,
+      .container.address .list.flex .item a {
+        font-size: 16px; }
+      .container.address .list.flex .item .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        fill: #1b5fc1; } }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
+  .back-grey {
+    background-color: #e1e6ec;
+    padding-top: 72px;
+    height: 416px; }
+
+  .container.information .wrapper {
+    justify-content: space-between; }
+  .container.information .information-box {
+    display: none; }
+    .container.information .information-box .logo {
+      margin-bottom: 38px; }
+    .container.information .information-box p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 147%;
+      color: #575c74; }
+  .container.information .information-about-list .container.information .information-mes-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px; }
+  .container.information .information-about h4, .container.information .information-mes h4 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #0c122d;
+    text-align: right;
+    margin-bottom: 15px; }
+  .container.information .information-about a, .container.information .information-mes a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    text-align: left;
+    color: #575c74; }
+  .container.information .information-about .active, .container.information .information-mes .active {
+    color: #1b5fc1; }
+  .container.information .wrap {
+    padding: 43px 0 30px 0;
+    text-align: center;
+    border-top: 1px solid #c4c4c4; }
+    .container.information .wrap p {
+      font-size: 15px;
+      line-height: 147%;
+      color: #575c74; } }
+@media screen and (min-width: 768px) {
   .back-grey {
     background-color: #e1e6ec;
     padding-top: 72px;

@@ -250,12 +250,12 @@
               align-items: center;
               border-radius: 50%;
               background-color: $blue;
-              max-width: 46px;
-              max-height: 46px;
+              width: 46px;
+              height: 46px;
               margin-left: 40px;
 
               & .aside-icon {
-                max-width: 20px;
+                width: 20px;
                 height: 20px;
                 fill: $white;
               }
@@ -300,6 +300,72 @@
 }
 
 @media screen and (min-width: 768px) {
+
+
+  .info {
+    &.flex {
+      margin-bottom: 50px;
+    }
+     & .inner {
+      max-width: 100%;
+     
+      & p {
+        font-size: 16px;
+       }
+      }
+
+    &.flex {
+      & .content {
+        max-width: 750px;
+        & div {
+          background: $accent;
+
+          & p {
+            font-size: 16px;
+            margin-bottom: 23px;
+          }
+        }
+
+        & .aside {          
+          & button {
+            font-size: 14px;
+            margin-right: 60px;
+          }
+
+          & .aside-contact {
+            & .wrap-icon {
+              display: flex;
+              justify-content: center; 
+              align-items: center; 
+              width: 46px; 
+              height: 46px;
+
+              & .aside-icon {
+                width: 20px;
+                  height: 20px;
+              }
+            }
+          }
+
+          & .wrap-cont {
+           
+            & span {
+              font-size: 16px;
+            }
+
+            & a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      & .content-caption {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

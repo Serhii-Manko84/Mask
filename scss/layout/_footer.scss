@@ -114,6 +114,50 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .back-accent {
+    background-color: $accent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    &.address {
+      .list {
+        &.flex {
+          gap: 50px;
+          flex-direction: row;
+
+          & .item {
+            gap: 10px;
+
+            &.item:nth-of-type(2) {
+              padding: 20px 0;
+              border: none
+            }
+
+            & h4 {
+             font-size: 18px;
+            }
+
+            & p,
+            a {
+              font-size: 16px;
+            }
+
+            & .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 32px;
+              height: 32px;
+              fill: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

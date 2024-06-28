@@ -89,6 +89,87 @@
   .container {
     &.information {
       & .wrapper {
+      
+        justify-content: space-between;
+      
+      }
+
+      & .information-box {
+       display: none;
+
+        & .logo {
+          margin-bottom: 38px;
+        }
+
+        & p {
+        
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 147%;
+          color: $grey;
+        }
+      }
+
+      & .information-about-list & .information-mes-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      & .information-about,
+      & .information-mes {
+        & h4 {
+          font-family: $sf;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 160%;
+          color: $dark;
+          text-align: right;
+          margin-bottom: 15px;
+        }
+
+        & a {
+          font-family: $ff;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 147%;
+          text-align: left;
+          color: $grey;
+        }
+
+        & .active {
+          color: $blue;
+        }
+      }
+
+      & .wrap {
+        padding: 43px 0 30px 0;
+        text-align: center;
+        border-top: 1px solid #c4c4c4;
+
+        & p {
+          font-size: 15px;
+          line-height: 147%;
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .back-grey {
+    background-color: #e1e6ec;
+    padding-top: 72px;
+    height: 416px;
+  }
+
+  .container {
+    &.information {
+      & .wrapper {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -159,9 +240,6 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1200px) {
