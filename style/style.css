@@ -733,48 +733,55 @@ button,
     padding-top: 72px;
     height: 416px; }
 
-  .container.information .wrapper {
-    justify-content: space-between; }
-  .container.information .information-box {
-    display: none; }
-    .container.information .information-box .logo {
-      margin-bottom: 38px; }
-    .container.information .information-box p {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 147%;
-      color: #575c74; }
-  .container.information .information-about-list .container.information .information-mes-list {
+  .container.information {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5px; }
-  .container.information .information-about h4, .container.information .information-mes h4 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 160%;
-    color: #0c122d;
-    text-align: right;
-    margin-bottom: 15px; }
-  .container.information .information-about a, .container.information .information-mes a {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 147%;
-    text-align: left;
-    color: #575c74; }
-  .container.information .information-about .active, .container.information .information-mes .active {
-    color: #1b5fc1; }
-  .container.information .wrap {
-    padding: 43px 0 30px 0;
-    text-align: center;
-    border-top: 1px solid #c4c4c4; }
-    .container.information .wrap p {
+    gap: 30px; }
+    .container.information .wrapper {
+      display: flex;
+      gap: 80px; }
+    .container.information .information-box {
+      display: none; }
+      .container.information .information-box .logo {
+        margin-bottom: 38px; }
+      .container.information .information-box p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 147%;
+        color: #575c74; }
+    .container.information .information-about-list .container.information .information-mes-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 5px; }
+    .container.information .information-about h4, .container.information .information-mes h4 {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 160%;
+      color: #0c122d;
+      text-align: right;
+      margin-bottom: 15px; }
+    .container.information .information-about a, .container.information .information-mes a {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
       font-size: 15px;
       line-height: 147%;
-      color: #575c74; } }
+      text-align: left;
+      color: #575c74; }
+    .container.information .information-about .active, .container.information .information-mes .active {
+      color: #1b5fc1; }
+    .container.information .wrap {
+      padding: 43px 0 30px 0;
+      text-align: center;
+      border-top: 1px solid #c4c4c4; }
+      .container.information .wrap p {
+        font-size: 15px;
+        line-height: 147%;
+        color: #575c74; } }
 @media screen and (min-width: 768px) {
   .back-grey {
     background-color: #e1e6ec;
@@ -785,7 +792,6 @@ button,
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: auto;
     margin-bottom: 60px; }
   .container.information .information-box {
     display: none; }
