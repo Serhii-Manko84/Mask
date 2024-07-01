@@ -1,59 +1,4 @@
-// .back-accent {
-//   background-color: $accent;
-//   padding-top: 41px;
-//   padding-bottom: 39px;
-// }
-
-// .container {
-//   &.address {
-//     .list {
-//       &.flex {
-//         gap: 31px;
-
-//         & .item {
-//           display: flex;
-//           justify-content: center;
-//           align-items: flex-start;
-//           gap: 8px;
-
-//           &.item:nth-of-type(2) {
-//             max-width: 433px;
-//             border-left: 1px solid #e0e0e0;
-//             border-right: 1px solid #e0e0e0;
-//           }
-
-//           & h4 {
-//             font-family: $sf;
-//             font-weight: 500;
-//             font-size: 20px;
-//             line-height: 150%;
-//             color: $dark;
-//           }
-
-//           & p,
-//           a {
-//             font-family: $ff;
-//             font-weight: 400;
-//             font-size: 15px;
-//             line-height: 133%;
-//             color: $dark;
-//           }
-
-//           & .icon {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             max-width: 32px;
-//             height: 32px;
-//             fill: $blue;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-@media screen  and (max-width: 479px), screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .back-accent {
     background-color: $accent;
     padding-top: 20px;
@@ -114,13 +59,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
-  .back-accent {
-    background-color: $accent;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   .container {
     &.address {
       .list {
@@ -133,25 +71,16 @@
 
             &.item:nth-of-type(2) {
               padding: 20px 0;
-              border: none
+              border: none;
             }
 
             & h4 {
-             font-size: 18px;
+              font-size: 18px;
             }
 
             & p,
             a {
               font-size: 16px;
-            }
-
-            & .icon {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 32px;
-              height: 32px;
-              fill: $blue;
             }
           }
         }
@@ -161,4 +90,37 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .back-accent {
+    width: 1920px;
+    height: 133px;
+    padding-top: 41px;
+    padding-bottom: 39px;
+  }
+
+  .container {
+    &.address {
+      .list {
+        &.flex {
+          gap: 31px;
+          justify-content: space-between;
+
+          & .item {
+            justify-content: center;
+
+            &.item:nth-of-type(2) {
+              min-width: 433px;
+              height: 53px;
+              padding: 0;
+              border-left: 1px solid #e0e0e0;
+              border-right: 1px solid #e0e0e0;
+            }
+
+            & h4 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

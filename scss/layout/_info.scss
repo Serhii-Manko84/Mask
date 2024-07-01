@@ -1,162 +1,4 @@
-// .info {
-//     position: relative;
-
-//     &.flex {
-//         align-items: flex-start;
-//         margin-bottom: 80px;
-//     }
-
-//     & .info-img {
-//         margin-top: 24px;
-//         border-radius: 20px 0 0 0;
-//         max-width: 570px;
-//         height: 616px;
-
-//     }
-
-//     & .info-text {
-//         position: absolute;
-//         bottom: 24px;
-//         left: 271px;
-//         max-width: 285px;
-//         height: 332px;
-//         padding: 50px 30px 80px 30px;
-
-//         font-family: $ff;
-//         font-weight: 400;
-//         font-size: 15px;
-//         line-height: 160%;
-//         color: $white;
-//         background-color: $blue;
-//     }
-
-//     & .inner {
-//         max-width: 570px;
-//         height: 332px;
-
-//         & p {
-//             font-family: $ff;
-//             font-weight: 400;
-//             font-size: 15px;
-//             line-height: 160%;
-//             color: $grey;
-//             padding: 80px 30px 132px 30px;
-//             background: $white;
-//         }
-
-//         & .text {
-//             color: $white;
-//             border-top-right-radius: 20px;
-//             background: $blue;
-//         }
-//     }
-
-//     &.flex {
-
-//         & .content {
-//             align-items: flex-start;
-//             flex-direction: column;
-//             max-width: 570px;
-//             height: 284px;
-//             padding: 45px 40px 49px 38px;
-//             border-bottom-right-radius: 20px;
-//             background: $accent;
-
-//             & div {
-//                 background: $accent;
-
-//                 & p {
-//                     font-family: $ff;
-//                     font-size: 15px;
-//                     line-height: 160%;
-//                     margin-bottom: 26px;
-//                 }
-//             }
-
-//             & .aside {
-//                 align-items: flex-start;
-//                 height: 51px;
-
-//                 & .aside-wrap {
-//                     border-right: 1px solid $white;
-//                     height: 46px;
-
-//                 }
-
-//                 & button {
-//                     border: 1px solid $blue;
-//                     border-radius: 8px;
-//                     max-width: 125px;
-//                     height: 46px;
-//                     font-family: $sf;
-//                     font-weight: 500;
-//                     font-size: 14px;
-//                     line-height: 214%;
-//                     text-align: center;
-//                     color: $blue;
-//                     background: $accent;
-//                     margin-right: 40px;
-//                 }
-
-//                 & .aside-contact {
-//                     height: 51px;
-//                     justify-content: center;
-//                     align-items: flex-start;
-//                     gap: 3px;
-
-//                     & .wrap-icon {
-//                         display: flex;
-//                         justify-content: center;
-//                         align-items: center;
-//                         border-radius: 50%;
-//                         background-color: $blue;
-//                         max-width: 46px;
-//                         height: 46px;
-//                         margin-left: 40px;
-
-//                         & .aside-icon {
-//                             max-width: 20px;
-//                             height: 20px;
-//                             fill: $white;
-//                         }
-//                     }
-//                 }
-
-//                 & .wrap-cont {
-//                     flex-direction: column;
-//                     align-items: flex-start;
-//                     margin-left: 13px;
-
-//                     & span {
-//                         font-family: $ff;
-//                         font-weight: 600;
-//                         font-size: 14px;
-//                         line-height: 171%;
-//                         color: $blue;
-//                     }
-
-//                     & a {
-//                         font-weight: 600;
-//                         font-size: 24px;
-//                         line-height: 100%;
-//                         color: $dark;
-//                     }
-//                 }
-//             }
-//         }
-
-//         & .content-caption {
-//             font-family: $sf;
-//             font-weight: 700;
-//             font-size: 20px;
-//             line-height: 250%;
-//             color: $dark;
-//             margin-bottom: 5px;
-//         }
-//     }
-// }
-
-@media screen  and (max-width: 479px), screen and (min-width: 480px) {
+@media screen and (max-width: 479px), screen and (min-width: 480px) {
   .info {
     position: relative;
 
@@ -165,23 +7,24 @@
       margin-bottom: 40px;
     }
 
-    & .info-img {display: none;
+    & .info-img {
+      display: none;
     }
 
-    & .info-text {display: none;
-
+    & .info-text {
+      display: none;
     }
 
     & .inner {
       max-width: 100%;
-     
+
       & p {
         font-family: $ff;
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
         color: $grey;
-        padding: 10px 15px ;
+        padding: 10px 15px;
         background: $white;
         text-align: center;
       }
@@ -196,8 +39,7 @@
     &.flex {
       & .content {
         display: block;
-        
-       
+
         padding: 20px;
         border-bottom-right-radius: 20px;
         background: $accent;
@@ -266,7 +108,6 @@
             flex-direction: column;
             align-items: flex-start;
             margin-left: 13px;
-           
 
             & span {
               font-family: $ff;
@@ -299,20 +140,19 @@
   }
 }
 
+// =========================768===============
+
 @media screen and (min-width: 768px) {
-
-
   .info {
     &.flex {
       margin-bottom: 50px;
     }
-     & .inner {
-      max-width: 100%;
+    & .inner {
      
       & p {
         font-size: 16px;
-       }
       }
+    }
 
     &.flex {
       & .content {
@@ -326,29 +166,13 @@
           }
         }
 
-        & .aside {          
+        & .aside {
           & button {
             font-size: 14px;
             margin-right: 60px;
           }
 
-          & .aside-contact {
-            & .wrap-icon {
-              display: flex;
-              justify-content: center; 
-              align-items: center; 
-              width: 46px; 
-              height: 46px;
-
-              & .aside-icon {
-                width: 20px;
-                  height: 20px;
-              }
-            }
-          }
-
           & .wrap-cont {
-           
             & span {
               font-size: 16px;
             }
@@ -368,5 +192,104 @@
   }
 }
 
+// ================================1200======================
+
 @media screen and (min-width: 1200px) {
+  .info {
+    position: relative;
+
+    &.flex {
+      align-items: flex-start;
+      margin-bottom: 80px;
+    }
+
+    & .info-img {
+      display: block;
+      margin-top: 24px;
+      border-radius: 20px 0 0 0;
+      max-width: 570px;
+      height: 616px;
+    }
+
+    & .info-text {
+      display: block;
+      position: absolute;
+      bottom: 24px;
+      left: 285px;
+      max-width: 285px;
+      height: 332px;
+      padding: 50px 30px 80px 30px;
+
+      font-family: $ff;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: $white;
+      background-color: $blue;
+    }
+
+    & .inner {
+      max-width: 570px;
+      height: 332px;
+
+      & p {
+        padding: 80px 30px 132px 30px;
+        text-align: left;
+      }
+    }
+
+    &.flex {
+      & .content {
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 570px;
+        height: 284px;
+        padding: 45px 40px 49px 38px;
+        border-bottom-right-radius: 20px;
+        background: $accent;
+
+        & div {
+         
+          & p {
+            font-family: $ff;
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 26px;
+            text-align: left;
+          }
+        }
+
+        & .aside {
+          align-items: flex-start;
+          height: 51px;
+
+          & .aside-wrap {
+            border-right: 1px solid $white;
+            height: 46px;
+          }
+
+          & button {
+            font-size: 14px;
+            line-height: 214%;
+            text-align: center;
+            color: $blue;
+          }
+
+          & .wrap-cont {
+            & a {
+              font-size: 24px;
+              line-height: 100%;
+            }
+          }
+        }
+      }
+
+      & .content-caption {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+       
+      }
+    }
+  }
 }
