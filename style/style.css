@@ -240,7 +240,7 @@ button,
       .hero.flex .hero-wom {
         position: absolute;
         top: 0px;
-        right: 43px;
+        right: 583px;
         display: block;
         width: 496px;
         height: 100%;
@@ -252,7 +252,7 @@ button,
   .container .hero-bg {
     position: absolute;
     bottom: 0px;
-    right: -353px;
+    right: 193px;
     background-image: url("../img/hero/bg.png");
     width: 927px;
     height: 891px;
