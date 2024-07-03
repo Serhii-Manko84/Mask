@@ -108,7 +108,7 @@ button,
     padding: 9px 0px 8px 0px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 140px;
     line-height: 187%;
     text-align: center;
     color: #575c74;
@@ -194,7 +194,7 @@ button,
     display: none;
   }
   .wrapper {
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 50px;
   }
   .wrapper span {
@@ -262,7 +262,7 @@ button,
     margin-bottom: 28px;
   }
   .wrapper {
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 40px;
   }
   .wrapper h1 {
@@ -461,6 +461,7 @@ button,
     color: #0c122d;
     margin-bottom: 26px;
     text-align: left;
+    padding: 0;
   }
   .diagnostic-lab .container .discr p {
     font-size: 16px;
@@ -777,6 +778,9 @@ button,
     align-items: flex-start;
     margin-bottom: 30px;
   }
+  .container.mask.flex .box-mask {
+    display: none;
+  }
   .container.mask.flex .box-mask-info h2 {
     font-family: "Rubik", sans-serif;
     font-weight: 700;
@@ -806,8 +810,8 @@ button,
     gap: 18px;
   }
   .mask-list.flex .item .wrapper-icon {
-    width: 52px;
-    height: 52px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-color: #1b5fc1;
     justify-content: center;
@@ -866,10 +870,6 @@ button,
     justify-content: center;
     gap: 40px;
   }
-  .box-mask {
-    max-width: 100%;
-    height: 100%;
-  }
   .container.mask.flex {
     gap: 90px;
     align-items: flex-start;
@@ -887,6 +887,7 @@ button,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 10px;
     gap: 20px;
   }
   .mask-list.flex .item {
@@ -895,6 +896,10 @@ button,
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+  }
+  .mask-list.flex .item .wrapper-icon {
+    width: 46px;
+    height: 46px;
   }
   .mask-list.flex .item h4 {
     font-size: 20px;
@@ -947,7 +952,6 @@ button,
     margin-right: 87px;
   }
   .mask-bg .box-img ul {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
@@ -955,104 +959,87 @@ button,
   .container.mask.flex {
     gap: 90px;
     align-items: flex-start;
-    margin-bottom: 61px;
+  }
+  .container.mask.flex .box-mask {
+    display: block;
+    height: 100%;
   }
   .container.mask.flex .box-mask-info h2 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
     font-size: 48px;
-    line-height: 104%;
-    color: #0c122d;
-    max-width: 653px;
+    text-align: left;
+    padding: 0;
     margin-bottom: 35px;
   }
   .container.mask.flex .box-mask-info p {
     font-size: 16px;
-    line-height: 187%;
-    text-align: start;
-    color: #575c74;
-    margin-top: -10px;
+    text-align: left;
+    padding: 0;
     margin-bottom: 35px;
   }
-  .mask-list.flex {
-    max-width: 650px;
+  .container .mask-list.flex {
     row-gap: 26px;
-    flex-wrap: wrap;
+    padding: 0;
   }
-  .mask-list.flex .item {
+  .container .mask-list.flex .item {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 18px;
   }
-  .mask-list.flex .item .wrapper-icon {
-    max-width: 56px;
+  .container .mask-list.flex .item .wrapper-icon {
+    width: 56px;
     height: 56px;
-    border-radius: 50%;
-    background-color: #1b5fc1;
     justify-content: center;
     align-items: center;
   }
-  .mask-list.flex .item div {
-    max-width: 238px;
+  .container .mask-list.flex .item div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-  .mask-list.flex .item h4 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+  .container .mask-list.flex .item h4 {
     font-size: 20px;
-    line-height: 140%;
-    color: #0c122d;
+    padding: 0;
+    text-align: left;
   }
-  .mask-list.flex .item p {
+  .container .mask-list.flex .item p {
     max-width: auto;
     font-size: 15px;
     line-height: 147%;
     color: #575c74;
     margin: 0;
   }
-  .mask-list.flex .item .mask-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 26px;
-    height: 26px;
-    fill: #fff;
-  }
 }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .container.reviews {
     margin-bottom: 48px;
   }
-  .reviews-list {
+  .container .reviews-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     padding: 5px 10px;
   }
-  .reviews-list .item {
+  .container .reviews-list .item {
     background-color: #fff;
   }
-  .reviews-list .item .result {
+  .container .reviews-list .item .result {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
   }
-  .reviews-list .item .box {
+  .container .reviews-list .item .box {
     color: #ffb800;
   }
-  .reviews-list .item .icon {
+  .container .reviews-list .item .icon {
     max-width: 25px;
     height: 25px;
     fill: #575c74;
     opacity: 0.5;
   }
-  .reviews-list .item .text {
+  .container .reviews-list .item .text {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -1061,21 +1048,42 @@ button,
     color: #0c122d;
     margin-bottom: 20px;
   }
-  .reviews-list .item .discriptions {
+  .container .reviews-list .item .discriptions {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
   }
-  .reviews-list .item .discriptions h5 {
+  .container .reviews-list .item .discriptions h5 {
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  .reviews-list .item .discriptions p {
+  .container .reviews-list .item .discriptions p {
     font-weight: 400;
     font-size: 14px;
     color: #575c74;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.reviews {
+    margin-bottom: 88px;
+  }
+  .container.reviews .reviews-list {
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px 10px;
+  }
+  .container.reviews .reviews-list .item {
+    max-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+  }
+  .container.reviews .reviews-list .item .discriptions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
@@ -1135,6 +1143,19 @@ button,
     max-width: 135px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container.get {
+    margin-bottom: 120px;
+  }
+  .container.get h2 {
+    font-size: 48px;
+    margin-bottom: 73px;
+  }
+  .container.get p {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+}
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .back-accent {
     background-color: #ffb800;
@@ -1183,11 +1204,6 @@ button,
   }
 }
 @media screen and (min-width: 768px) {
-  .back-accent {
-    background-color: #ffb800;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .container.address .list.flex {
     gap: 50px;
     flex-direction: row;
@@ -1206,13 +1222,30 @@ button,
 .container.address .list.flex .item a {
     font-size: 16px;
   }
-  .container.address .list.flex .item .icon {
-    display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .back-accent {
+    width: 1920px;
+    height: 133px;
+    padding-top: 41px;
+    padding-bottom: 39px;
+  }
+  .container.address .list.flex {
+    gap: 31px;
+    justify-content: space-between;
+  }
+  .container.address .list.flex .item {
     justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    fill: #1b5fc1;
+  }
+  .container.address .list.flex .item.item:nth-of-type(2) {
+    min-width: 433px;
+    height: 53px;
+    padding: 0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+  }
+  .container.address .list.flex .item h4 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
@@ -1239,6 +1272,7 @@ button,
     margin-bottom: 38px;
   }
   .container.information .information-box p {
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 147%;
@@ -1283,45 +1317,42 @@ button,
   }
 }
 @media screen and (min-width: 768px) {
-  .back-grey {
-    background-color: #e1e6ec;
-    padding-top: 72px;
-    height: 416px;
-  }
   .container.information .wrapper {
-    display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 60px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .back-grey {
+    height: 416px;
+    width: 1920px;
+  }
+  .container.information {
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .container.information .wrapper {
+    max-width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
   .container.information .information-box {
-    display: none;
+    display: block;
+    max-width: 340px;
   }
   .container.information .information-box .logo {
+    display: block;
+    width: 161px;
+    height: 40px;
+    background-color: #c4c4c4;
     margin-bottom: 38px;
   }
   .container.information .information-box p {
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    line-height: 147%;
-    color: #575c74;
-  }
-  .container.information .information-about-list .container.information .information-mes-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5px;
-  }
-  .container.information .information-about h4, .container.information .information-mes h4 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 160%;
-    color: #0c122d;
-    text-align: right;
-    margin-bottom: 15px;
   }
   .container.information .information-about a, .container.information .information-mes a {
     font-family: "Open Sans", sans-serif;
@@ -1331,17 +1362,7 @@ button,
     text-align: left;
     color: #575c74;
   }
-  .container.information .information-about .active, .container.information .information-mes .active {
-    color: #1b5fc1;
-  }
   .container.information .wrap {
-    padding: 43px 0 30px 0;
-    text-align: center;
-    border-top: 1px solid #c4c4c4;
-  }
-  .container.information .wrap p {
-    font-size: 15px;
-    line-height: 147%;
-    color: #575c74;
+    padding: 23px 0 30px 0;
   }
 }/*# sourceMappingURL=style.css.map */

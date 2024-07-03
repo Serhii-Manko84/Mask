@@ -135,7 +135,6 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1920px;
     height: 744px;
     background: #f7fdfb;
 
@@ -147,7 +146,7 @@
       & .hero-wom {
         position: absolute;
         top: 0px;
-        right: 370px;
+        right: 43px;
         display: block;
         width: 496px;
         height: 100%;
@@ -163,7 +162,7 @@
     & .hero-bg {
       position: absolute;
       bottom: 0px;
-      right: -20px;
+      right: -353px;
       background-image: url("../img/hero/bg.png");
       width: 927px;
       height: 891px;

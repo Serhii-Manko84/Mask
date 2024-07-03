@@ -35,7 +35,8 @@ button,
 .container {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin: 0 auto; }
 
 @media screen and (max-width: 480px) {
   .container {
@@ -65,15 +66,17 @@ button,
     position: relative;
     height: 67px;
     padding-top: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    background: #f7fdfb; }
     .header .header-bg {
       position: absolute;
       z-index: -1;
       top: -19px;
       left: 0px;
-      max-width: 100%;
+      width: 100%;
       height: 1195px;
-      background-color: #f7fdfb; }
+      background-color: #f7fdfb;
+      z-index: -3; }
     .header .container.flex {
       display: flex;
       justify-content: center;
@@ -118,10 +121,7 @@ button,
         font-size: 12px; } }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1920px;
     margin-bottom: 80px; }
-    .header .header-bg {
-      width: 1920px; }
     .header .container.flex {
       justify-content: space-around;
       gap: 368px; }
@@ -231,7 +231,6 @@ button,
       font-size: 16px; } }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1920px;
     height: 744px;
     background: #f7fdfb; }
     .hero.flex {
@@ -241,7 +240,7 @@ button,
       .hero.flex .hero-wom {
         position: absolute;
         top: 0px;
-        right: 370px;
+        right: 43px;
         display: block;
         width: 496px;
         height: 100%;
@@ -253,7 +252,7 @@ button,
   .container .hero-bg {
     position: absolute;
     bottom: 0px;
-    right: -20px;
+    right: -353px;
     background-image: url("../img/hero/bg.png");
     width: 927px;
     height: 891px;
@@ -358,65 +357,69 @@ button,
     font-size: 16px;
     padding: 0 30px; } }
 @media screen and (min-width: 1200px) {
-  .diagnostic-lab {
-    background-image: url("../img/diagnostic/Vector-left.png"), url("../img/diagnostic/Vector-right.png");
-    background-position: top left, right 985px;
-    background-repeat: no-repeat no-repeat;
-    width: 1920px;
-    z-index: 0;
+  .diagnostic {
     position: relative; }
-    .diagnostic-lab .container .discr {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 47px;
-      margin-bottom: 80px; }
-      .diagnostic-lab .container .discr h2 {
-        font-size: 48px;
-        color: #0c122d;
-        margin-bottom: 26px;
-        text-align: left;
-        padding: 0; }
-      .diagnostic-lab .container .discr p {
-        font-size: 16px;
-        padding: 0;
-        text-align: left; }
-      .diagnostic-lab .container .discr .discr-img {
-        order: 2; }
-      .diagnostic-lab .container .discr .discr-text {
-        min-width: 523px;
-        height: 417px; }
+    .diagnostic .diagnostic-lab {
+      background-image: url("../img/diagnostic/Vector-left.png"), url("../img/diagnostic/Vector-right.png");
+      background-position: top left, right 1012px;
+      background-repeat: no-repeat no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 2491px;
+      z-index: -2; }
 
-  .diagnostic-list.flex {
-    gap: 31px;
-    margin-bottom: 133px;
-    justify-content: flex-end; }
-    .diagnostic-list.flex .item {
+  .container .discr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+    margin-bottom: 80px; }
+    .container .discr h2 {
+      font-size: 48px;
+      color: #0c122d;
+      margin-bottom: 26px;
+      text-align: left;
+      padding: 0; }
+    .container .discr p {
+      font-size: 16px;
+      padding: 0;
+      text-align: left; }
+    .container .discr .discr-img {
+      order: 2; }
+    .container .discr .discr-text {
+      min-width: 523px;
+      height: 417px; } }
+.diagnostic-list.flex {
+  gap: 31px;
+  margin-bottom: 133px;
+  justify-content: flex-end; }
+  .diagnostic-list.flex .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; }
+    .diagnostic-list.flex .item div {
+      max-width: 194px; }
+    .diagnostic-list.flex .item h4 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: #0c122d;
+      margin-bottom: 15px; }
+    .diagnostic-list.flex .item p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 147%;
+      color: #575c74; }
+    .diagnostic-list.flex .item .diagnostic-icon {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px; }
-      .diagnostic-list.flex .item div {
-        max-width: 194px; }
-      .diagnostic-list.flex .item h4 {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 140%;
-        color: #0c122d;
-        margin-bottom: 15px; }
-      .diagnostic-list.flex .item p {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 147%;
-        color: #575c74; }
-      .diagnostic-list.flex .item .diagnostic-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 40px;
-        fill: #ffb800; } }
+      max-width: 40px;
+      fill: #ffb800; }
+
 @media screen and (max-width: 479px), screen and (min-width: 480px) {
   .info {
     position: relative; }
@@ -756,9 +759,10 @@ button,
       top: -414px;
       left: -42px;
       border-bottom-left-radius: 150px;
-      width: 1920px;
+      width: 100%;
       height: 1614px;
-      background: #f7fdfb; }
+      background: #f7fdfb;
+      z-index: -1; }
     .mask-bg .box-img {
       height: 80px;
       display: flex;
@@ -1000,7 +1004,6 @@ button,
         font-size: 16px; } }
 @media screen and (min-width: 1200px) {
   .back-accent {
-    width: 1920px;
     height: 133px;
     padding-top: 41px;
     padding-bottom: 39px; }
@@ -1081,8 +1084,7 @@ button,
     margin-bottom: 60px; } }
 @media screen and (min-width: 1200px) {
   .back-grey {
-    height: 416px;
-    width: 1920px; }
+    height: 416px; }
 
   .container.information {
     justify-content: space-evenly;
